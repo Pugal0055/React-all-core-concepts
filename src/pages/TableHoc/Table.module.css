@@ -1,0 +1,104 @@
+.table-Conatainer {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.user-title,
+.product-title {
+  width: 50%;
+}
+
+table {
+  border-collapse: collapse;
+  font-size: 15px;
+  width: 100%;
+}
+
+th {
+  color: #333;
+  font-weight: bold;
+  text-align: left;
+  padding: 4px;
+}
+
+td {
+  padding: 4px;
+}
+
+.product-title th {
+  background-color: #8ce99a;
+}
+
+.product-title tr:nth-child(even) {
+  background-color: #b2f2bb;
+}
+
+.user-title th {
+  background-color: #ffc078;
+}
+
+.user-title tr:nth-child(even) {
+  background-color: #ffd8a8;
+}
+
+/* pagination */
+
+.pagination {
+  margin: 2rem 0;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  user-select: none;
+}
+
+.pagination ul {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.pagination li,
+.pagination span {
+  cursor: pointer;
+  height: 34px;
+  width: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%),
+    0 1px 5px 0 rgb(0 0 0 / 12%);
+  transition: all 3s;
+}
+
+.pagination span {
+  align-self: center;
+}
+
+.edit {
+  color: rgba(0, 128, 0, 0.662) !important;
+  margin-right: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.delete {
+  color: red;
+  cursor: pointer;
+  user-select: none;
+}
+
+button {
+  margin-bottom: 20px;
+  padding: 5px 20px;
+  border-radius: 0;
+  background-color: gray;
+  border: none;
+}

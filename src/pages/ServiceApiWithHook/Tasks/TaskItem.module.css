@@ -1,0 +1,42 @@
+.task {
+  border-bottom: 1px solid #ccc;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task div .delete {
+  color: red !important;
+  cursor: pointer;
+  user-select: none;
+}
+
+.task div .edit {
+  color: rgba(0, 128, 0, 0.763);
+  cursor: pointer;
+  user-select: none;
+  margin-right: 4px;
+}
+
+.task div .save {
+  color: rgb(105, 158, 25);
+  cursor: pointer;
+  user-select: none;
+}
+
+.task:last-of-type {
+  border-bottom: none;
+}
+
+.task input {
+  border: none;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.task input:focus {
+  outline: none;
+}

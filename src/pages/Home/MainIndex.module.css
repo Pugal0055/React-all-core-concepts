@@ -1,0 +1,41 @@
+.maintable {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 100px;
+  cursor: pointer;
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 4px;
+  border-collapse: collapse;
+}
+
+.maintable tr:nth-child(odd) {
+  background-color: #8ce99a;
+}
+.maintable tr:nth-child(even) {
+  background-color: #ebfbee;
+}
+
+.maintable td {
+  padding: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a.active {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+a.active:hover,
+a.active:visited,
+tr:hover,
+tr:visited {
+  text-decoration: none;
+  background-color: #ff922b !important;
+}

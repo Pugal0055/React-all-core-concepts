@@ -1,0 +1,56 @@
+.backdrop {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.379);
+  position: fixed;
+  top: 0%;
+  left: 0%;
+}
+
+.card {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35%;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card .edit__container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.card input {
+  border: 1px solid gray;
+  padding: 8px;
+  border-radius: 2px;
+}
+
+.card button {
+  display: block;
+  align-self: end;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.card .delete__container {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.delete__container button {
+  margin: 0px 10px;
+}
