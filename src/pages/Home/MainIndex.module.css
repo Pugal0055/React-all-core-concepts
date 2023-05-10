@@ -39,3 +39,20 @@ tr:visited {
   text-decoration: none;
   background-color: #ff922b !important;
 }
+
+.logout {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  margin-right: 50px;
+  border: none;
+  border-radius: 0;
+  padding: 10px 24px;
+  background-color: #8ce99a;
+  color: #333;
+  cursor: pointer;
+}
+
+.logout:hover {
+  background-color: #6abc76;
+}

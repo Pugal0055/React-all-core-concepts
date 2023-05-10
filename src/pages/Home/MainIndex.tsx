@@ -1,10 +1,23 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { useDispatch } from "react-redux";
 
 import classes from "./MainIndex.module.css";
 
+import { authAction } from "src/store/authentication";
+
 const MainIndex = () => {
+  const dispatch = useDispatch();
+
+  const logoutHandler = () => {
+    dispatch(authAction.logout());
+  };
+
   return (
     <>
+      <button className={classes.logout} onClick={logoutHandler}>
+        Logout
+      </button>
+
       <table className={classes["maintable"]}>
         <tbody>
           <tr>
